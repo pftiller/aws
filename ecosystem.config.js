@@ -1,7 +1,7 @@
 module.exports = {
     apps: [{
       name: 'aws',
-      script: 'server.js'
+      script: './index.js'
     }],
     deploy: {
       production: {
@@ -11,8 +11,7 @@ module.exports = {
         ref: 'origin/master',
         repo: 'git@github.com:pftiller/aws.git',
         path: '/home/ubuntu/aws',
-        'pre-deploy': 'git fetch --depth=5 --all --tags',
-        'post-deploy': 'npm install'
+        'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
       }
     }
   }
