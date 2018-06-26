@@ -11,7 +11,7 @@ module.exports = {
         ref: 'origin/master',
         repo: 'git@github.com:pftiller/aws.git',
         path: '/home/ubuntu/aws',
-        'pre-deploy': 'git pull',
+        'pre-deploy': 'git fetch',
         'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
       }
     }
