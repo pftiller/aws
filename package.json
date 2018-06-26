@@ -1,0 +1,28 @@
+{
+  "name": "aws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ecosystem.config.js",
+  "scripts": {
+    "restart": "pm2 startOrRestart ecosystem.config.js",
+    "deploy": "pm2 deploy ecosystem.config.js production",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pftiller/aws.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pftiller/aws/issues"
+  },
+  "homepage": "https://github.com/pftiller/aws#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "pm2": "^2.10.4"
+  }
+}
