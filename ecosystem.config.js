@@ -10,7 +10,7 @@ module.exports = {
         key: '~/.ssh/portfolio.pem',
         ref: 'origin/master',
         repo: 'git@github.com:pftiller/aws.git',
-        path: '/home/ubuntu/aws',
+        path: '/home/ubuntu',
         'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
       }
     }
