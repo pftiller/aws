@@ -2,7 +2,7 @@
   "name": "aws",
   "version": "1.0.0",
   "description": "",
-  "main": "ecosystem.config.js",
+  "main": "index.js",
   "scripts": {
     "restart": "pm2 startOrRestart ecosystem.config.js",
     "deploy": "pm2 deploy ecosystem.config.js production",
