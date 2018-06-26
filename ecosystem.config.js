@@ -11,7 +11,7 @@ module.exports = {
         ref: 'origin/master',
         repo: 'git@github.com:pftiller/aws.git',
         path: '/home/ubuntu/aws',
-        'pre-deploy': 'git pull origin master',
+        'pre-deploy': 'git fetch --depth=5 --all --tags',
         'post-deploy': 'npm install'
       }
     }
